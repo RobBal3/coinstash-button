@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="flex gap-2 mt-2">
+          <Button text=" Button" color="blueLight" size="lg" />
+          <Button text=" Button" color="blueLight" size="lg" isLoading={true} />
+          <Button text=" Button" color="blueLight" size="lg" disabled={true} />
+          <Button text=" Button" color="blueLight" size="xlg" disabled={true} />
+          <Button text=" Button" color="blueLight" size="sm" disabled={true} />
+          <Button text=" Button" color="red" size="sm" />
+      </div>
+  )
 }
 
 export default App;
